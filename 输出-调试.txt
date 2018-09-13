@@ -1,0 +1,11 @@
+﻿“EMS.exe”(CLR v4.0.30319: DefaultDomain): 已加载“C:\Windows\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“EMS.exe”(CLR v4.0.30319: DefaultDomain): 已加载“D:\LeanC#\EMS\EMS\EMS\bin\Debug\EMS.exe”。已加载符号。
+“EMS.exe”(CLR v4.0.30319: EMS.exe): 已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“EMS.exe”(CLR v4.0.30319: EMS.exe): 已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“EMS.exe”(CLR v4.0.30319: EMS.exe): 已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“EMS.exe”(CLR v4.0.30319: EMS.exe): 已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“EMS.exe”(CLR v4.0.30319: EMS.exe): 已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“EMS.exe”(CLR v4.0.30319: EMS.exe): 已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“EMS.exe”(CLR v4.0.30319: EMS.exe): 已加载“C:\Windows\Microsoft.Net\assembly\GAC_MSIL\mscorlib.resources\v4.0_4.0.0.0_zh-Hans_b77a5c561934e089\mscorlib.resources.dll”。模块已生成，不包含符号。
+程序“[13964] EMS.exe: 程序跟踪”已退出，返回值为 0 (0x0)。
+程序“[13964] EMS.exe”已退出，返回值为 0 (0x0)。

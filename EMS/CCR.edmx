@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="CCRModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2005" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--生成过程中发现错误:
+警告 6002: 表/视图“CCR.dbo.Table_IP”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+        <EntityType Name="Table_IP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DeviceName" Type="nchar" MaxLength="10" />
+          <Property Name="IP" Type="nchar" MaxLength="10" />
+          <Property Name="Netmask" Type="nchar" MaxLength="10" />
+          <Property Name="Place" Type="nchar" MaxLength="10" />
+          <Property Name="Annotation" Type="nchar" MaxLength="200" />
+        </EntityType>
+        <EntityContainer Name="CCRModelStoreContainer">
+          <EntitySet Name="Table_IP" EntityType="Self.Table_IP" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Table_IP].[ID] AS [ID], 
+    [Table_IP].[DeviceName] AS [DeviceName], 
+    [Table_IP].[IP] AS [IP], 
+    [Table_IP].[Netmask] AS [Netmask], 
+    [Table_IP].[Place] AS [Place], 
+    [Table_IP].[Annotation] AS [Annotation]
+    FROM [dbo].[Table_IP] AS [Table_IP]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CCRModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Table_IP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DeviceName" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="IP" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Netmask" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Place" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Annotation" Type="String" MaxLength="200" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="CCREntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Table_IP" EntityType="Self.Table_IP" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CCRModelStoreContainer" CdmEntityContainer="CCREntities">
+          <EntitySetMapping Name="Table_IP">
+            <EntityTypeMapping TypeName="CCRModel.Table_IP">
+              <MappingFragment StoreEntitySet="Table_IP">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DeviceName" ColumnName="DeviceName" />
+                <ScalarProperty Name="IP" ColumnName="IP" />
+                <ScalarProperty Name="Netmask" ColumnName="Netmask" />
+                <ScalarProperty Name="Place" ColumnName="Place" />
+                <ScalarProperty Name="Annotation" ColumnName="Annotation" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
