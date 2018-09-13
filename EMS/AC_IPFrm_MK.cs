@@ -10,21 +10,19 @@ using System.Windows.Forms;
 
 namespace EMS
 {
-    public partial class IPFrm : Form
+    public partial class AC_IPFrm_MK : Form
     {
-        public IPFrm()
+        public AC_IPFrm_MK()
         {
             InitializeComponent();
         }
-        string strID = "";
-        private void IPFrm_Load(object sender, EventArgs e)
+
+        private void AC_IPFrm_MK_Load(object sender, EventArgs e)
         {
             using (CCREntities db = new CCREntities())
             {
-                dgvInfo.DataSource = db.Table_IP.ToList();
+                dgvInfo.DataSource=
             }
-
-
         }
     }
 }
