@@ -42,16 +42,16 @@ namespace EMS
 
 
         }
-        //private Form2 Frm = null;
-        //private void oPENToolStripMenuItem_Click(object sender, EventArgs e)
-        //{
-        //    if (Frm==null || Frm.IsDisposed)
-        //    {
-        //        Frm = new Form2();
-        //    }
-        //    Frm.MdiParent = this;
-        //    Frm.Show();
-        //    Frm.Focus();
-        //}
+        private IPFrm Frm = null;
+        private void oPENToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Frm==null || Frm.IsDisposed)
+            {
+                Frm = new IPFrm();
+            }
+            Frm.MdiParent = this;
+            Frm.Show();
+            Frm.Focus();
+        }
     }
 }

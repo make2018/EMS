@@ -51,21 +51,21 @@
             this.主数据ToolStripMenuItem,
             this.oPENToolStripMenuItem});
             this.菜单ToolStripMenuItem.Name = "菜单ToolStripMenuItem";
-            this.菜单ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
-            this.菜单ToolStripMenuItem.Text = "菜单";
+            this.菜单ToolStripMenuItem.Size = new System.Drawing.Size(60, 21);
+            this.菜单ToolStripMenuItem.Text = "菜单(&A)";
             // 
             // 主数据ToolStripMenuItem
             // 
             this.主数据ToolStripMenuItem.Name = "主数据ToolStripMenuItem";
             this.主数据ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.主数据ToolStripMenuItem.Text = "主数据";
+            this.主数据ToolStripMenuItem.Text = "主数据(&AA)";
             this.主数据ToolStripMenuItem.Click += new System.EventHandler(this.主数据ToolStripMenuItem_Click);
             // 
             // oPENToolStripMenuItem
             // 
             this.oPENToolStripMenuItem.Name = "oPENToolStripMenuItem";
             this.oPENToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.oPENToolStripMenuItem.Text = "OPEN";
+            this.oPENToolStripMenuItem.Text = "OPEN（&AB）";
             this.oPENToolStripMenuItem.Click += new System.EventHandler(this.oPENToolStripMenuItem_Click);
             // 
             // FMain
