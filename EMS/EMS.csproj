@@ -100,6 +100,9 @@
     <Compile Include="Table_IP.cs">
       <DependentUpon>CCR.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AC_IPFrm_MK.resx">
+      <DependentUpon>AC_IPFrm_MK.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FMain.resx">
       <DependentUpon>FMain.cs</DependentUpon>
     </EmbeddedResource>
