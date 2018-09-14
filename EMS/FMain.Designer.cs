@@ -35,6 +35,7 @@
             this.iPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.testToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.vTIPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +47,7 @@
             this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(890, 25);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -56,7 +57,8 @@
             this.菜单ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.主数据ToolStripMenuItem,
             this.oPENToolStripMenuItem,
-            this.iPToolStripMenuItem});
+            this.iPToolStripMenuItem,
+            this.vTIPToolStripMenuItem});
             this.菜单ToolStripMenuItem.Name = "菜单ToolStripMenuItem";
             this.菜单ToolStripMenuItem.Size = new System.Drawing.Size(60, 21);
             this.菜单ToolStripMenuItem.Text = "菜单(&A)";
@@ -94,11 +96,18 @@
             this.toolStripMenuItem1.Size = new System.Drawing.Size(41, 21);
             this.toolStripMenuItem1.Text = "123";
             // 
+            // vTIPToolStripMenuItem
+            // 
+            this.vTIPToolStripMenuItem.Name = "vTIPToolStripMenuItem";
+            this.vTIPToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.vTIPToolStripMenuItem.Text = "VT_IP(&AD)";
+            this.vTIPToolStripMenuItem.Click += new System.EventHandler(this.vTIPToolStripMenuItem_Click);
+            // 
             // FMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(890, 450);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -120,5 +129,6 @@
         private System.Windows.Forms.ToolStripMenuItem iPToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem testToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem vTIPToolStripMenuItem;
     }
 }
