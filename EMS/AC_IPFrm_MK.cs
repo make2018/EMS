@@ -19,10 +19,7 @@ namespace EMS
 
         private void AC_IPFrm_MK_Load(object sender, EventArgs e)
         {
-            using (CCREntities db = new CCREntities())
-            {
-                dgvInfo.DataSource=
-            }
+          
         }
     }
 }
