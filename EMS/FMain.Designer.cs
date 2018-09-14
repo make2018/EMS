@@ -33,13 +33,15 @@
             this.主数据ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.oPENToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.testToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.菜单ToolStripMenuItem});
+            this.菜单ToolStripMenuItem,
+            this.testToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 25);
@@ -77,6 +79,12 @@
             this.iPToolStripMenuItem.Text = "IP(&AC)";
             this.iPToolStripMenuItem.Click += new System.EventHandler(this.iPToolStripMenuItem_Click);
             // 
+            // testToolStripMenuItem
+            // 
+            this.testToolStripMenuItem.Name = "testToolStripMenuItem";
+            this.testToolStripMenuItem.Size = new System.Drawing.Size(41, 21);
+            this.testToolStripMenuItem.Text = "test";
+            // 
             // FMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -101,5 +109,6 @@
         private System.Windows.Forms.ToolStripMenuItem 主数据ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem oPENToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem iPToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem testToolStripMenuItem;
     }
 }
