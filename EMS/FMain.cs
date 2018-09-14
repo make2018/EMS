@@ -69,5 +69,13 @@ namespace EMS
         {
 
         }
+
+        private void vTIPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AD_VT_IP_ethan frm1_ethan = new AD_VT_IP_ethan();
+            frm1_ethan.Show();
+            frm1_ethan.MdiParent = this;
+
+        }
     }
 }
