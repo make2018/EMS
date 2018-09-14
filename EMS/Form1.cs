@@ -43,6 +43,7 @@ namespace EMS
                 {
                     //设置偶数行颜色
                     dataGridView1.Rows[dgvRow.Index].DefaultCellStyle.BackColor = Color.LightSalmon;
+                   
                 }
                 else//奇数行
                 {

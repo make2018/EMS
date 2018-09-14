@@ -63,5 +63,42 @@ namespace EMS
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //@DName varchar(20),
+        	//@IP varchar(20),
+	        //@mask varchar(20),
+	        //@place varchar(50),
+	        //@Anno varchar(200)
+            SqlCommand sqlcmd = new SqlCommand();
+            sqlcmd.Connection = sqlcon;
+            sqlcmd.CommandType = CommandType.StoredProcedure;
+            sqlcmd.CommandText = "proc_AddData";
+            sqlcmd.Parameters.Add("@DName", SqlDbType.VarChar, 20).Value = textBox1.Text;
+            sqlcmd.Parameters.Add("@IP", SqlDbType.VarChar, 20).Value = textBox2.Text;
+            sqlcmd.Parameters.Add("@mask", SqlDbType.VarChar, 20).Value = textBox3.Text;
+            sqlcmd.Parameters.Add("@place", SqlDbType.VarChar, 50).Value = textBox4.Text;
+            sqlcmd.Parameters.Add("@Anno", SqlDbType.VarChar, 200).Value = textBox5.Text;
+            if (sqlcon.State==ConnectionState.Closed)
+            { sqlcon.Open();}
+            if (Convert.ToInt32(sqlcmd.ExecuteNonQuery ())>0)
+            {
+                label6.Text = "添加成功";
+            }
+            else
+            {
+                label6.Text = "添加失败";
+            }
+
+            sqlcon = new SqlConnection(strCon);
+            sqlda = new SqlDataAdapter("select * from Table_IP", sqlcon);
+            myds = new DataSet();
+          //  DataSet myds = new DataSet();
+            sqlda.Fill(myds);
+            //sqlda.Fill(myds, "IPTable");
+            dgvInfo.DataSource = myds.Tables[0];
+            sqlcon.Close();
+        }
     }
 }
