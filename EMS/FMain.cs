@@ -42,27 +42,32 @@ namespace EMS
 
 
         }
-        private AC_IPFrm_MK Frm = null;
+        private Form1 Frm = null;
         private void oPENToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (Frm==null || Frm.IsDisposed)
             {
-                Frm = new AC_IPFrm_MK();
+                Frm = new Form1();
             }
             Frm.MdiParent = this;
             Frm.Show();
             Frm.Focus();
         }
-
+        private AC_IPFrm_MK IPFrm = null;
         private void iPToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Frm == null || Frm.IsDisposed)
+            if (IPFrm == null || IPFrm.IsDisposed)
             {
-                Frm = new AC_IPFrm_MK();
+                IPFrm = new AC_IPFrm_MK();
             }
-            Frm.MdiParent = this;
-            Frm.Show();
-            Frm.Focus();
+            IPFrm.MdiParent = this;
+            IPFrm.Show();
+            IPFrm.Focus();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }
