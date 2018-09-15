@@ -67,6 +67,12 @@
     <Compile Include="AC_IPFrm_MK.Designer.cs">
       <DependentUpon>AC_IPFrm_MK.cs</DependentUpon>
     </Compile>
+    <Compile Include="BA_Read_PLC_ethan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BA_Read_PLC_ethan.Designer.cs">
+      <DependentUpon>BA_Read_PLC_ethan.cs</DependentUpon>
+    </Compile>
     <Compile Include="CCR.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -113,6 +119,9 @@
     </Compile>
     <EmbeddedResource Include="AC_IPFrm_MK.resx">
       <DependentUpon>AC_IPFrm_MK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BA_Read_PLC_ethan.resx">
+      <DependentUpon>BA_Read_PLC_ethan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FMain.resx">
       <DependentUpon>FMain.cs</DependentUpon>

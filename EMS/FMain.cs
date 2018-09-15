@@ -77,5 +77,12 @@ namespace EMS
             frm1_ethan.MdiParent = this;
 
         }
+
+        private void 访问PLCBAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BA_Read_PLC_ethan frm2_ethan = new BA_Read_PLC_ethan();
+            frm2_ethan.Show();
+            frm2_ethan.MdiParent = this;
+        }
     }
 }
