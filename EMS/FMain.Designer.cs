@@ -33,9 +33,9 @@
             this.主数据ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.oPENToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.testToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.vTIPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.testToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.访问PLCBAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,8 +43,7 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.菜单ToolStripMenuItem,
-            this.testToolStripMenuItem,
-            this.toolStripMenuItem1});
+            this.testToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(890, 25);
@@ -84,24 +83,27 @@
             this.iPToolStripMenuItem.Text = "IP(&AC)";
             this.iPToolStripMenuItem.Click += new System.EventHandler(this.iPToolStripMenuItem_Click);
             // 
-            // testToolStripMenuItem
-            // 
-            this.testToolStripMenuItem.Name = "testToolStripMenuItem";
-            this.testToolStripMenuItem.Size = new System.Drawing.Size(41, 21);
-            this.testToolStripMenuItem.Text = "test";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(41, 21);
-            this.toolStripMenuItem1.Text = "123";
-            // 
             // vTIPToolStripMenuItem
             // 
             this.vTIPToolStripMenuItem.Name = "vTIPToolStripMenuItem";
             this.vTIPToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.vTIPToolStripMenuItem.Text = "VT_IP(&AD)";
             this.vTIPToolStripMenuItem.Click += new System.EventHandler(this.vTIPToolStripMenuItem_Click);
+            // 
+            // testToolStripMenuItem
+            // 
+            this.testToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.访问PLCBAToolStripMenuItem});
+            this.testToolStripMenuItem.Name = "testToolStripMenuItem";
+            this.testToolStripMenuItem.Size = new System.Drawing.Size(57, 21);
+            this.testToolStripMenuItem.Text = "PLC(&B)";
+            // 
+            // 访问PLCBAToolStripMenuItem
+            // 
+            this.访问PLCBAToolStripMenuItem.Name = "访问PLCBAToolStripMenuItem";
+            this.访问PLCBAToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.访问PLCBAToolStripMenuItem.Text = "访问PLC(&BA)";
+            this.访问PLCBAToolStripMenuItem.Click += new System.EventHandler(this.访问PLCBAToolStripMenuItem_Click);
             // 
             // FMain
             // 
@@ -128,7 +130,7 @@
         private System.Windows.Forms.ToolStripMenuItem oPENToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem iPToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem testToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem vTIPToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 访问PLCBAToolStripMenuItem;
     }
 }
