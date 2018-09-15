@@ -114,6 +114,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="snap7.net.cs" />
     <Compile Include="Table_IP.cs">
       <DependentUpon>CCR.tt</DependentUpon>
     </Compile>
