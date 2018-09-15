@@ -65,28 +65,28 @@
             // 主数据ToolStripMenuItem
             // 
             this.主数据ToolStripMenuItem.Name = "主数据ToolStripMenuItem";
-            this.主数据ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.主数据ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.主数据ToolStripMenuItem.Text = "主数据(&AA)";
             this.主数据ToolStripMenuItem.Click += new System.EventHandler(this.主数据ToolStripMenuItem_Click);
             // 
             // oPENToolStripMenuItem
             // 
             this.oPENToolStripMenuItem.Name = "oPENToolStripMenuItem";
-            this.oPENToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.oPENToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.oPENToolStripMenuItem.Text = "OPEN（&AB）";
             this.oPENToolStripMenuItem.Click += new System.EventHandler(this.oPENToolStripMenuItem_Click);
             // 
             // iPToolStripMenuItem
             // 
             this.iPToolStripMenuItem.Name = "iPToolStripMenuItem";
-            this.iPToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.iPToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.iPToolStripMenuItem.Text = "IP(&AC)";
             this.iPToolStripMenuItem.Click += new System.EventHandler(this.iPToolStripMenuItem_Click);
             // 
             // vTIPToolStripMenuItem
             // 
             this.vTIPToolStripMenuItem.Name = "vTIPToolStripMenuItem";
-            this.vTIPToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.vTIPToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.vTIPToolStripMenuItem.Text = "VT_IP(&AD)";
             this.vTIPToolStripMenuItem.Click += new System.EventHandler(this.vTIPToolStripMenuItem_Click);
             // 
@@ -109,12 +109,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(890, 450);
+            this.ClientSize = new System.Drawing.Size(890, 544);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FMain";
             this.Text = "FMain";
+            this.Load += new System.EventHandler(this.FMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
