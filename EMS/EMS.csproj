@@ -67,6 +67,8 @@
     <Compile Include="AC_IPFrm_MK.Designer.cs">
       <DependentUpon>AC_IPFrm_MK.cs</DependentUpon>
     </Compile>
+    <Compile Include="Basic_DataBase_Operate.cs" />
+    <Compile Include="Basic_PLC_Operate.cs" />
     <Compile Include="BA_Read_PLC_ethan.cs">
       <SubType>Form</SubType>
     </Compile>
