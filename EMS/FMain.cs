@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Snap7;
 
 
 namespace EMS
@@ -16,8 +17,15 @@ namespace EMS
         public FMain()
         {
             InitializeComponent();
+            Client = new S7Client();
+            if (IntPtr.Size == 4)
+                this.Text = this.Text + " - Running 32 bit Code";
+            else
+                this.Text = this.Text + " - Running 64 bit Code";
         }
 
+        private S7Client Client;
+        private byte[] Buffer = new byte[65536];
 
         //定义子窗口对象
         private ChildFrm myChildFrm = null;
@@ -84,5 +92,17 @@ namespace EMS
             frm2_ethan.Show();
             frm2_ethan.MdiParent = this;
         }
+
+        public static void connect_plc()
+        {
+
+        }
+
+
+        private void FMain_Load(object sender, EventArgs e)
+        {
+          
+        }
     }
 }
+
