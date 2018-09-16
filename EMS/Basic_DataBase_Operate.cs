@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
-
+using System.Configuration;
 namespace EMS
 {
     class Basic_DataBase_Operate
@@ -13,7 +13,8 @@ namespace EMS
         //连接数据库
         public SqlConnection getcon()
         {
-            string M_str_sqlcon = "Server=10.228.141.253;User Id=sa;Pwd=p@ssw0rd;DataBase=CCR";//定义数据库连接字符串
+            // string M_str_sqlcon = "Server=10.228.141.253;User Id=sa;Pwd=p@ssw0rd;DataBase=CCR";//定义数据库连接字符串
+            string M_str_sqlcon = ConfigurationManager.ConnectionStrings["SqlConnection String"].ConnectionString;
             SqlConnection myCon = new SqlConnection(M_str_sqlcon);
             return myCon;
         }
