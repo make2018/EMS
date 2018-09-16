@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
 using System.Configuration;
+using Oracle.DataAccess.Client;
 namespace EMS
 {
     class Basic_DataBase_Operate
@@ -52,6 +53,53 @@ namespace EMS
             sqlcon.Open();
             SqlDataReader sqlread = sqlcom.ExecuteReader(CommandBehavior.CloseConnection);
             return sqlread;
+        }
+
+
+       //连接Oracle数据库的方法by ethan  20180916
+    
+        //连接数据库
+        public OracleConnection OrcGetCon()
+        {
+            // string M_str_sqlcon = "Data Source=10.228.141.253/ORCL;User Id=WEBKF;Password=WEBKF";//定义数据库连接字符串
+            string M_str_sqlcon = ConfigurationManager.ConnectionStrings["OracleDbContext"].ConnectionString;
+           OracleConnection myCon = new OracleConnection(M_str_sqlcon);
+            return myCon;
+        }
+
+
+        //连接OracleConnection,执行SQL
+        public void OrcGetCom(string M_str_sqlstr)
+        {
+            OracleConnection orccon = this.OrcGetCon();
+            orccon.Open();
+            OracleCommand orccom = new OracleCommand(M_str_sqlstr, orccon);
+            orccom.ExecuteNonQuery();
+            orccom.Dispose();
+            orccon.Close();
+            orccon.Dispose();
+        }
+
+
+        //创建DataSet对象
+        public DataSet OrcGetDs(string M_str_sqlstr, string M_str_table)
+        {
+            OracleConnection orccon = this.OrcGetCon();
+            OracleDataAdapter orcda = new OracleDataAdapter(M_str_sqlstr, orccon);
+            DataSet myds = new DataSet();
+            orcda.Fill(myds, M_str_table);
+            return myds;
+        }
+
+
+        //创建OracleDataReader对象
+        public OracleDataReader OrcGetRead(string M_str_sqlstr)
+        {
+            OracleConnection orccon = this.OrcGetCon();
+            OracleCommand orccom = new OracleCommand(M_str_sqlstr, orccon);
+            orccon.Open();
+            OracleDataReader orcread = orccom.ExecuteReader(CommandBehavior.CloseConnection);
+            return orcread;
         }
     }
 }
